@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Bachelors of Computer Science",
+    "institution": "University of Hertfordshire International",
+    "image": "hertfordshire.png",
+    "location": "Hertfordshire, United Kingdom",
+    "duration": "3 year",
+    "tuition_fee": "£17,950",
+    "Initial Required": "£5000",
+    "Scholarship": "£2000",
+    "application_fee": "GBP 0",
+    "intake": "September",
+    "turnaround_time": "5-7 working days",
+    "admission_requirements": {
+      "TOEFL": 71,
+      "PTE": 59,
+      "IELTS_UKVI": "6.5+"
+    },
+    "post_study_work_visa": "Available",
+    "gap_year_allowed": true,
+    "backlog_allowed": true,
+    "is_drive_only": true
+  },
+  {
+    "id": 2,
+    "title": "First Year Degree in Chemistry",
+    "institution": "Hertfordshire International College via Navitas",
+    "image": "Hertfordshire-International-College.png",
+    "location": "Hertfordshire, United Kingdom",
+    "duration": "1 year",
+    "tuition_fee": "GBP 17,795/course",
+    "application_fee": "GBP 0",
+    "intake": "September",
+    "turnaround_time": "4-7 days",
+    "admission_requirements": {
+      "TOEFL": 71,
+      "PTE": 59,
+      "IELTS_UKVI": "6+"
+    },
+    "post_study_work_visa": "Available",
+    "gap_year_allowed": true,
+    "backlog_allowed": true,
+    "is_drive_only": true
+  },
+  {
+    "id": 3,
+    "title": "First Year Degree in Business and Management",
+    "institution": "Hertfordshire International College via Navitas",
+    "image": "Hertfordshire-International-College.png",
+    "location": "Hertfordshire, United Kingdom",
+    "duration": "1 year",
+    "tuition_fee": "GBP 17,795/course",
+    "application_fee": "GBP 0",
+    "intake": "September",
+    "turnaround_time": "4-7 days",
+    "admission_requirements": {
+      "TOEFL": 71,
+      "PTE": 59,
+      "IELTS_UKVI": "6+"
+    },
+    "post_study_work_visa": "Available",
+    "gap_year_allowed": true,
+    "backlog_allowed": true,
+    "is_drive_only": true
+  }
+]
