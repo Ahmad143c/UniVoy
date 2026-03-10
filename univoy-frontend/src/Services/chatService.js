@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api';
+// use the same environment variable as other services
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001/api';
 
 const chatService = {
   // Get all messages between two users

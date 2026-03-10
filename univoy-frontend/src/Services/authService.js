@@ -1,6 +1,10 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5001/api";
+// allow the base API URL to be configured from an environment variable (needed
+// when the frontend is served from a different host/port than the backend).
+// REACT_APP_API_URL should include the "/api" segment if your server mounts
+// routes there (e.g. https://...-5001.app.github.dev/api).
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001/api';
 
 export const login = async (credentials) => {
   try {

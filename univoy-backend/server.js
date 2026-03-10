@@ -12,9 +12,13 @@ dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
+
+// allow overriding the frontend origin via env var (useful in Codespaces and production)
+const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || 'http://localhost:3000';
+
 const io = socketIo(server, {
   cors: {
-    origin: 'http://localhost:3000',
+    origin: FRONTEND_ORIGIN,
     methods: ['GET', 'POST'],
     credentials: true
   }
@@ -23,7 +27,7 @@ app.set('io', io);
 
 // CORS configuration
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: FRONTEND_ORIGIN,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization']

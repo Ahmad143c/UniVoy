@@ -15,7 +15,11 @@ import PersonIcon from '@mui/icons-material/Person';
 import chatService from '../../Services/chatService';
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = 'http://localhost:5001';
+// compute socket URL from the API_URL environment variable so we can point at
+// the forwarded backend host in Codespaces.
+const SOCKET_URL =
+  (process.env.REACT_APP_API_URL && process.env.REACT_APP_API_URL.replace('/api', '')) ||
+  'http://localhost:5001';
 
 const ChatList = ({ currentUser, onSelectChat }) => {
   const [availableChats, setAvailableChats] = useState([]);

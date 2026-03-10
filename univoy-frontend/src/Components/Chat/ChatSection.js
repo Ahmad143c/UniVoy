@@ -20,7 +20,12 @@ import SendIcon from '@mui/icons-material/Send';
 import chatService from '../../Services/chatService';
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = 'http://localhost:5001';
+// derive socket host from the same API_URL used by services, falling back to
+// localhost when no env var is present.  We strip the "/api" segment if it was
+// included.
+const SOCKET_URL =
+  (process.env.REACT_APP_API_URL && process.env.REACT_APP_API_URL.replace('/api', '')) ||
+  'http://localhost:5001';
 
 const ChatSection = ({ currentUser }) => {
   const [messages, setMessages] = useState([]);
